@@ -17,6 +17,7 @@ def main():
     # Get all properties
     property_ids = soup.find_all("td", attrs={"class": "hidden-print"})
 
+    # Process each property
     for property_id in property_ids:
         # Create the property url
         property_id = str(property_id).split("PropertyId=", 1)[1].split('\"')[0]
