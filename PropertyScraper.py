@@ -63,13 +63,13 @@ def main():
         # Get property url
         d['Link'] = property_url
 
-        # Copy the contents of the property info dictionary into a list
+        # Copy the contents of the property dictionary into a list
         final_list.append(d.copy())
         lines = []
         d.clear()
         print(">")
 
-    # create csv with all properties
+    # Create csv with all properties
     with open('test.csv', 'wb') as csv_file:
         fieldnames = [
             'Sheriff #',
